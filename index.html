@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -33,32 +31,37 @@
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
                 <div class="form-container">
-                    <form method="get" action="">
-                        <i class="fa-solid fa-location-dot fa-lg"></i><input type="text" id="name" name="name" required minlength="4" maxlength="50" size="20" value="Marseille, France"/><button class="btn-search" type="submit"><a href="#">Rechercher</a><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <form action="search" method="get">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                        <input type="text" id="name" name="name" required minlength="4" maxlength="50" size="20" value="Marseille, France">
+                        <button type="submit" class="btn-search">
+                            Rechercher
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </form>
                 </div>
                 <div class="filtres">
                     <h3>Filtres</h3>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-money-bill-wave"></i> Économique</a></button>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-person"></i></i> Familial</a></button>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-heart"></i> Romantique</a></button>
-                    <button class="btn"><a href="#"><i class="fa-solid fa-fire"></i> Nos pépites</a></button>
+                    <button class="btn"><i class="fa-solid fa-money-bill-wave fa-lg"></i> Économique</button>
+                    <button class="btn"><i class="fa-solid fa-person fa-lg"></i> Familial</button>
+                    <button class="btn"><i class="fa-solid fa-heart fa-lg"></i> Romantique</button>
+                    <button class="btn"><i class="fa-solid fa-fire fa-lg"></i> Nos pépites</button>
                 </div>
                 <div class="infos">
-                    <i class="fa-solid fa-info"></i>
+                    <i class="fa-solid fa-info fa-sm"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
             <div class="hebergements-and-populaires">
                 <section id="hebergements-marseille" class="hebergements">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpeg" alt="Image d'une chambre de l'Hôtel du Port">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Hôtel du Port</h3>
+                                        <h3 class="card-title">Hôtel du port</h3>
                                         <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -173,7 +176,7 @@
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
-                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <div class="populaires-cards">
                         <a href="#">
