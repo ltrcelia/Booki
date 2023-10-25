@@ -49,12 +49,16 @@ nav {
     justify-content: space-between;
 }
 
-nav img {
+.logo-booki {
     width: 60px;
 }
+
 .menu a {
-    margin: 0 0 0 60px;
     padding: 28px 0;
+}
+
+.menu .a-activites {
+    margin-left: 60px;
 }
 
 .menu a:hover {
@@ -143,30 +147,32 @@ footer {
 }
 
 .title-page {
-    line-height: 90%;
     padding: 0 0 20px 0;
 }
 
 /****** Form ******/
-form {
+.form-container {
     display: flex;
+}
+
+.form-container .fa-location-dot,
+.form-container input,
+.btn-search {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
 }
 
 .form-container .fa-location-dot {
     background-color: var(--main-bg-color);
     color: black;
     border: 1px solid var(--main-bg-color);
-    font-size: var(--font-size-large);
     border-radius: 15px 0 0 15px;
     padding: 25px 20px;
 }
 
-.form-container input {
+.input-field {
     border: 1px solid var(--main-bg-color);
     text-align: center;
-    padding: 15px 0;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-large);
 }
 
 .btn-search {
@@ -175,9 +181,6 @@ form {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     border-radius: 0 15px 15px 0;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-large);
-    display: inline;
 }
 
 .btn-search:hover {
@@ -192,27 +195,28 @@ form {
 .filtres {
     display: flex;
     align-items: baseline;
+    padding: 40px 0;
+    gap: 15px;
+}
+
+.filtres,
+.filtres .btn,
+.filtres i {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size-large);
-    padding: 40px 0;
-    gap: 7px;
 }
 
 .filtres i {
     padding-right: 10px;
-    font-size: var(--font-size-large);
 }
 
 .filtres .btn {
     display: flex;
     align-items: baseline;
     background-color: white;
-    border: 2px solid var(--border-grey);
     border-radius: 50px;
+    border: 2px solid var(--border-grey);
     padding: 14px 20px;
-    margin-left: 10px;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-large);
 }
 
 .filtres .btn:hover {
@@ -360,12 +364,13 @@ form {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .fa-magnifying-glass {
+   .btn-search .i-search {
         display: none;
     }
 
     .filtres {
-        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     .hebergements-and-populaires {
@@ -383,6 +388,7 @@ form {
 
     .populaires-cards {
         display: flex;
+        align-items: center;
         flex-direction: column;
     }  
     
@@ -394,10 +400,6 @@ form {
         width: 23%;
     }
 
-    .activites-cards .card {
-        align-content: space-between;
-    }
-
     .activites-cards img {
         width: 100%;
         height: 200px;
@@ -405,59 +407,46 @@ form {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {.title-page h1 {
-        line-height: 28px;
-    }
-
-    .title-page p {
-        line-height: 0;
+@media (max-width: 767.98px) {
+    .menu .a-activites {
+        margin-left: 30px;
     }
 
     .menu a:hover {
         border-top: none;
         border-bottom: 2px solid var(--main-color);
-        color: var(--main-color);
-    }
-
-    form {
-        align-items: center;
-    }
-    
-    .form-container a {
-        display: none;
     }
 
     .form-container input {
-        padding-right: 70px;
+        width: 75%;
     }
 
-    .btn-search a{
+    .btn-search .txt-search {
         display: none;
     }
     
-    .btn-search {
-        border-radius: 15px;
-        transform: translate(-50%);
-    }
-
-    .btn-search i {
+    .btn-search .i-search {
         display: inline;
         color: white;
         font-size: var(--font-size-large);
     }
     
+    .btn-search {
+        border-radius: 15px;
+        transform: translate(-15%);
+    }
+    
     .filtres {
         flex-direction: column;
-
         gap: 10px;
     }
     
     .filtres i {
-        padding-right: 5px;
+        padding-right: 10px;
     }
     .filtres .btn {
-        width: 90%;
-        padding: var(--font-size-medium);
+        width: 100%;
+        font-size: var(--font-size-medium);
     }
 
     .hebergements-cards {
@@ -476,10 +465,6 @@ form {
         width: 100%;
     } 
 
-    .populaires-cards .card-content {
-        padding-right: 5px;
-    }
-
     .activites-cards {
         align-items: center;
         display: flex;
@@ -496,6 +481,7 @@ form {
 
     .footer-container {
         display: flex;
+        white-space: nowrap;
         flex-direction: column;
         gap: 50px;
         padding: 10px;
@@ -504,6 +490,5 @@ form {
     .footer-elements a {
         display: flex;
         flex-direction: row;
-        white-space: nowrap;
     }
 }

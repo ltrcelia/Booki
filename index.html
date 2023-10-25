@@ -16,10 +16,10 @@
     <div class="main-container">
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="logo de Booki">
+                <img src="images/logo/Booki.png" alt="logo de Booki" class="logo-booki">
                 <div class="menu">
                     <a href="#hebergements-marseille">Hébergements</a>
-                    <a href="#actives-marseille">Activités</a>
+                    <a href="#actives-marseille" class="a-activites">Activités</a>
                 </div>
             </nav>
         </header>
@@ -30,22 +30,22 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div class="form-container">
-                    <form action="search" method="get">
+                <form action="search" method="get">
+                    <div class="form-container">
                         <i class="fa-solid fa-location-dot fa-lg"></i>
-                        <input type="text" id="name" name="name" required minlength="4" maxlength="50" size="20" value="Marseille, France">
+                        <input type="text" id="city" name="city" value="Marseille, France" class="input-field">
                         <button type="submit" class="btn-search">
-                            Rechercher
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="txt-search">Rechercher</span> 
+                            <i class="fa-solid fa-magnifying-glass i-search"></i>
                         </button>
-                    </form>
-                </div>
+                    </div>
+                </form>
                 <div class="filtres">
                     <h3>Filtres</h3>
-                    <button class="btn"><i class="fa-solid fa-money-bill-wave fa-lg"></i> Économique</button>
-                    <button class="btn"><i class="fa-solid fa-person fa-lg"></i> Familial</button>
-                    <button class="btn"><i class="fa-solid fa-heart fa-lg"></i> Romantique</button>
-                    <button class="btn"><i class="fa-solid fa-fire fa-lg"></i> Nos pépites</button>
+                    <button class="btn"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                    <button class="btn"><i class="fa-solid fa-person"></i> Familial</button>
+                    <button class="btn"><i class="fa-solid fa-heart"></i> Romantique</button>
+                    <button class="btn"><i class="fa-solid fa-fire"></i> Nos pépites</button>
                 </div>
                 <div class="infos">
                     <i class="fa-solid fa-info fa-sm"></i>
