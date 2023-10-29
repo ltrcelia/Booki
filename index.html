@@ -16,7 +16,9 @@
     <div class="main-container">
         <header>
             <nav>
-                <img src="images/logo/Booki.png" alt="logo de Booki" class="logo-booki">
+                <div>
+                    <img src="images/logo/Booki.png" alt="logo de Booki" class="logo-booki">
+                </div>    
                 <div class="menu">
                     <a href="#hebergements-marseille">Hébergements</a>
                     <a href="#actives-marseille" class="a-activites">Activités</a>
@@ -33,7 +35,7 @@
                 <form action="search" method="get">
                     <div class="form-container">
                         <i class="fa-solid fa-location-dot fa-lg"></i>
-                        <input type="text" id="city" name="city" value="Marseille, France" class="input-field">
+                        <input type="text" id="city" name="city" placeholder="Marseille, France" class="input-field">
                         <button type="submit" class="btn-search">
                             <span class="txt-search">Rechercher</span> 
                             <i class="fa-solid fa-magnifying-glass i-search"></i>
@@ -242,30 +244,38 @@
             <section id="actives-marseille" class="activites">
                 <h2>Activités à Marseille</h2>
                 <div class="activites-cards">
-                    <a href="#">
-                        <article class="card">
-                            <img src="images/activites/reno-laithienne.jpeg" alt="Photo du Vieux-Port à Marseille">
-                            <h3>Vieux-Port</h3>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="card">
-                            <img src="images/activites/paul-hermann.jpeg" alt="Photo du Fort de Pomèges à Marseille">
-                            <h3>Fort de Pomèges</h3>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="card card-long">
-                            <img src="images/activites/kilyan-sockalingum.jpeg" alt="Photo du parc national des Calanques à Marseille">
-                            <h3>Parc national des Calanques</h3>
-                        </article>
-                    </a>
-                    <a href="#">
-                        <article class="card card-long">
-                            <img src="images/activites/florian-wehde.jpeg" alt="Photo de Notre-Dame-de-la-Garde à Marseille">
-                            <h3>Notre-Dame-de-la-Garde</h3>
-                        </article>
-                    </a>
+                    <div class="activites-container">
+                        <a href="#">
+                            <article class="card">
+                                <img src="images/activites/reno-laithienne.jpeg" alt="Photo du Vieux-Port à Marseille">
+                                <h3>Vieux-Port</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="activites-container">
+                        <a href="#">
+                            <article class="card">
+                                <img src="images/activites/paul-hermann.jpeg" alt="Photo du Fort de Pomèges à Marseille">
+                                <h3>Fort de Pomèges</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="activites-container">
+                        <a href="#">
+                            <article class="card card-long">
+                                <img src="images/activites/kilyan-sockalingum.jpeg" alt="Photo du parc national des Calanques à Marseille">
+                                <h3>Parc national des Calanques</h3>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="activites-container">
+                        <a href="#">
+                            <article class="card card-long">
+                                <img src="images/activites/florian-wehde.jpeg" alt="Photo de Notre-Dame-de-la-Garde à Marseille">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </article>
+                        </a>
+                    </div>
                 </div>    
             </section>
         </main>

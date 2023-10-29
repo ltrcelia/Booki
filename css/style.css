@@ -51,6 +51,7 @@ nav {
 
 .logo-booki {
     width: 60px;
+    height: auto;
 }
 
 .menu a {
@@ -172,6 +173,7 @@ footer {
 
 .input-field {
     border: 1px solid var(--main-bg-color);
+    color: black;
     text-align: center;
 }
 
@@ -344,8 +346,8 @@ footer {
     margin-top: 35px;
 }
 
-.activites-cards a {
-    width: 23%;
+.activites-container {
+    width: 25%;
 }
 
 .activites-cards img {
