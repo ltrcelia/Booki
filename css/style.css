@@ -73,7 +73,7 @@ a {
     text-decoration: none;
 }
 
-/********* Cartes ********/
+/********* Cards ********/
 .section-title {
     font-size: var(--font-size-xlarge);
 }
@@ -108,11 +108,16 @@ a {
     margin-bottom: 5px;
 }
 
+.card:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
+    transform: scale(1.01);
+}
+
 .euro {
     font-weight: var(--font-weight-bold);
 }
 
-/***** étoiles ******/
+/***** Stars ******/
 .fa-solid {
     color: var(--main-color);
     font-size: var(--font-size-small);
@@ -191,8 +196,8 @@ footer {
 .btn-search i {
     display: none;
 }
-/****** ******/
 
+/****** Filtres ******/
 .filtres {
     display: flex;
     align-items: baseline;
@@ -336,7 +341,6 @@ footer {
 .activites-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .activites-container .card {
@@ -364,7 +368,6 @@ footer {
     padding: 20px;
 }
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
